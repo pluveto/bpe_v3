@@ -1,0 +1,4 @@
+*.txt*
+!*sample.txt*
+*.tmp.*
+__pycache__

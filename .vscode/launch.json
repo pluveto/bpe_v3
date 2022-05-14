@@ -1,0 +1,48 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: 测试",
+            "type": "python",
+            "request": "launch",
+            "program": "main.py",
+            "console": "integratedTerminal",
+            "args": [
+                "-i",
+                "data/train_BPE.txt",
+                "-t",
+                "./data/test_minimini.txt",
+                "-n",
+                "4",
+                "-m",
+                "test"
+            ],
+            "justMyCode": true
+        },
+        {
+            "name": "Python: 分词器",
+            "type": "python",
+            "request": "launch",
+            "program": "max_match_token.py",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Python: 词典生成器",
+            "type": "python",
+            "request": "launch",
+            "program": "main.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--input",
+                "./data/train_mini.txt",
+                "-n",
+                "1"
+            ],
+            "justMyCode": true
+        }
+    ]
+}
